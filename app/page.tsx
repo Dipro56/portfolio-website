@@ -1,10 +1,22 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Github, Linkedin, Mail } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
+import { SiRedux } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { FaNode } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { FaFlutter } from "react-icons/fa6";
+import { IoIosLink } from "react-icons/io";
+import { RiSlideshow2Line } from "react-icons/ri";
 
 export default function Home() {
   return (
@@ -13,15 +25,22 @@ export default function Home() {
       <section className="bg-gray-100">
         <div className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2 space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">Hi, I&apos;m Sadat Shahriar</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+              Hi, I&apos;m Sadat Shahriar
+            </h1>
             <div className="typing-container">
-              <h1>I am a <span className="typing">Software Engineer</span></h1>
+              <h1>
+                I am a <span className="typing">Software Engineer</span>
+              </h1>
             </div>
 
             <p className="text-gray-700">
-              Passionate about building scalable applications and solving complex problems with clean, efficient code.
+              Passionate about building scalable applications and solving
+              complex problems with clean, efficient code.
             </p>
-            <Button className="bg-blue-900 hover:bg-blue-800">Contact Me</Button>
+            <Button className="bg-blue-900 hover:bg-blue-800">
+              Contact Me
+            </Button>
           </div>
           <div className="md:w-1/2">
             <div className="bg-blue-900 rounded-lg overflow-hidden">
@@ -40,18 +59,19 @@ export default function Home() {
       {/* About Me Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">{`<About Me/>`}</h2>
           <div className="max-w-3xl mx-auto mb-16">
             <p className="text-gray-700 mb-6">
-              I&apos;m a dedicated software engineer with 5 years of experience in developing innovative web and mobile
-              applications. My passion lies in creating seamless user experiences through clean, efficient code and
-              intuitive design. I thrive on tackling complex problems and delivering high-quality, maintainable, and
-              scalable solutions.
+              I&apos;m a dedicated software engineer with 3 years of experience
+              in developing innovative web applications. My passion lies in
+              creating seamless user experiences through clean, efficient code
+              and intuitive design. I thrive on tackling complex problems and
+              delivering high-quality, maintainable, and scalable solutions.
             </p>
             <p className="text-gray-700">
-              Currently, I&apos;m working as a Senior Software Engineer at Tech Solutions Inc., where I lead development
-              teams in creating enterprise-level applications. I focus on full-stack development, which design, and
-              mobile app development, ensuring our products not only function flawlessly but also provide exceptional
+              Currently, I&apos;m working as a Software Engineer (Frontend) at
+              Gakk Media. But i focus on full-stack development, ensuring our
+              products not only function flawlessly but also provide exceptional
               user experiences.
             </p>
           </div>
@@ -63,7 +83,9 @@ export default function Home() {
                   <div className="text-blue-600 text-xl font-bold">F</div>
                 </div>
                 <h3 className="font-bold mb-2">Frontend Development</h3>
-                <p className="text-sm text-gray-600">React, Vue.js, TypeScript</p>
+                <p className="text-sm text-gray-600">
+                  React, Next js, JavaScript, TypeScript
+                </p>
               </CardContent>
             </Card>
 
@@ -103,12 +125,62 @@ export default function Home() {
       {/* Technical Skills Section */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Technical Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            <SkillCard name="JavaScript" percentage={90} icon="JS" />
+          <h2 className="text-3xl font-bold text-center mb-12">{`<Technical Skills/>`}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+            <div className="flex flex-col justify-center items-center">
+              <IoLogoJavascript size={70} />
+              <p className="mt-3">Javascript</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <FaHtml5 size={70} />
+              <p className="mt-3">Html</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <IoLogoCss3 size={70} />
+              <p className="mt-3">CSS</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <FaReact size={70} />
+              <p className="mt-3">React</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <SiRedux size={70} />
+              <p className="mt-3">Redux</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <SiNextdotjs size={70} />
+              <p className="mt-3">Next Js</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <SiTypescript size={70} />
+              <p className="mt-3">Typescript</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <FaNode size={70} />
+              <p className="mt-3">Node</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <FaFigma size={70} />
+              <p className="mt-3">Figma</p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <FaFlutter size={70} />
+              <p className="mt-3">Flutter</p>
+            </div>
+
+            {/* <SkillCard name="JavaScript" percentage={90} icon="JS" />
             <SkillCard name="Python" percentage={85} icon="PY" />
             <SkillCard name="React" percentage={95} icon="RE" />
-            <SkillCard name="Node.js" percentage={88} icon="NO" />
+            <SkillCard name="Node.js" percentage={88} icon="NO" /> */}
           </div>
         </div>
       </section>
@@ -116,28 +188,47 @@ export default function Home() {
       {/* Featured Projects Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">{`<Featured Projects/>`}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ProjectCard
-              title="Analytics Dashboard"
-              description="A real-time analytics dashboard built with React and D3.js, processing millions of data points daily."
-              image="/images/analytics-project.png"
-              tags={["React", "D3.js", "Node.js"]}
+              title="Shadhin"
+              description="Largest audio platform of Bangladesh. User can enjoy different kind of audio contents here."
+              image="/images/shadhin_project.png"
+              tags={["Javascript", "React", "Next.js", "Zustand"]}
+              liveLink={"https://shadhinmusic.com/"}
               stats={{ github: 25, stars: 42, forks: 15 }}
+              demoLink={null}
             />
             <ProjectCard
-              title="E-commerce Platform"
-              description="Full-scale e-commerce solution with real-time inventory management and payment processing."
-              image="/images/ecommerce-project.png"
-              tags={["React", "Python", "PostgreSQL"]}
+              title="Infiniti"
+              description="Infiniti is a document processing software. It is used for document editing and storing. "
+              image="/images/infinite.png"
+              tags={["React", "Typescript", "Redux"]}
               stats={{ github: 18, stars: 36, forks: 12 }}
+              liveLink={"http://100.42.178.85:3002/"}
+              demoLink={
+                "https://drive.google.com/file/d/1Jh_1f9C2u0n42FUQ5pOXa671_NmfhVMn/view?usp=drive_link"
+              }
             />
+
             <ProjectCard
-              title="Real-time Chat App"
-              description="WebSocket-based chat application supporting multiple rooms and file sharing."
-              image="/images/chat-project.png"
-              tags={{ left: ["Node.js", "Express"], right: ["MongoDB", "Socket.io"] }}
-              stats={{ github: 30, stars: 55, forks: 20 }}
+              title="Win"
+              description="Win is a quiz platform. User can enjoy different types of quiz here. This platform is also used by different types of telco."
+              image="/images/win.png"
+              tags={["Javascript", "React", "Next Js", "Redux"]}
+              stats={{ github: 18, stars: 36, forks: 12 }}
+              liveLink={"https://win2gain.com"}
+              demoLink={null}
+            />
+
+            <ProjectCard
+              title="Shadhin CMS"
+              description="This project is for data monitoring and observing different types of revenue for shadhin company."
+              image="/images/shadhincms.png"
+              tags={["Javascript", "React", "Redux"]}
+              stats={{ github: 18, stars: 36, forks: 12 }}
+              liveLink={"http://shadhincms.shadhin.co/"}
+              demoLink={null}
             />
           </div>
         </div>
@@ -146,26 +237,39 @@ export default function Home() {
       {/* Work Experience Section */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Work Experience</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">{`<Work Experience/>`}</h2>
           <div className="max-w-3xl mx-auto space-y-12">
             <ExperienceCard
-              company="Tech Solutions Inc."
-              role="Senior Software Engineer"
-              period="2020 - Present"
+              company="Gakk Media (Shadhin)"
+              role="Software Engineer (Frontend)"
+              period="2022 October - Present"
               achievements={[
-                "Led development of cloud-native applications serving 20M+ users",
-                "Implemented microservices architecture reducing deployment time by 60%",
-                "Mentored junior developers and conducted technical interviews",
+                "Implemented various features like stream & win campaign, playlist, payment, authentication of Shadhin which is currently number one audio platform of Bangladesh.",
+                "Restructured the project and refactored old unmaintainable codes to readable, maintainable and clean code. Increased performance by decreasing initial loading time.",
+                "Build a report management system from scratch for viewing various kind of data report using React which is used by telecommunication clients (Banglalink, GP, Robi).",
+                "Developed VAS services and updated features as per client need.",
+                "Helped and guided junior teammates.",
               ]}
             />
             <ExperienceCard
-              company="Innovation Labs"
-              role="Software Engineer"
-              period="2017 - 2020"
+              company="Fair Pattern"
+              role="Software Engineer (Frontend)"
+              period="2024 Deember - 2025 March (Contractual)"
               achievements={[
-                "Developed and maintained mobile-first banking applications",
-                "Improved application performance by 40% through optimization",
-                "Implemented automated testing reducing bugs by 75%",
+                "Developed document drawing functionality within the DocuWare platform to build interactive and user-friendly drawing tools.",
+                "Designed and implemented complex document annotation features, including drawing, highlighting, and editing, significantly enhancing user interactivity with documents",
+                "Collaborated with cross-functional teams to ensure smooth integration, high performance, and a user-friendly interface for the document drawing features",
+              ]}
+            />
+
+            <ExperienceCard
+              company="Hashcode"
+              role="Software Developer"
+              period="2022 January - 2022 December"
+              achievements={[
+                "Developed and maintained web and mobile applications using JavaScript, React, React Native and Node.js",
+                `Collaborated with cross-functional teams to design and implement new features Resolved performance issues for different client products.`,
+                "Converted figma design to functional components as perproject requirement.",
               ]}
             />
           </div>
@@ -175,7 +279,9 @@ export default function Home() {
       {/* Education & Certifications Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Education & Certifications</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Education & Certifications
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="p-6">
               <CardContent className="pt-6 flex items-start gap-4">
@@ -183,8 +289,12 @@ export default function Home() {
                   <div className="text-blue-600 text-xl">🎓</div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">Master of Computer Science</h3>
-                  <p className="text-sm text-gray-600">Specialized in Artificial Intelligence and Machine Learning</p>
+                  <h3 className="font-bold text-lg mb-2">
+                    Master of Computer Science
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Specialized in Artificial Intelligence and Machine Learning
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -194,8 +304,13 @@ export default function Home() {
                   <div className="text-blue-600 text-xl">🏆</div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">AWS Solutions Architect</h3>
-                  <p className="text-sm text-gray-600">Professional certification in cloud architecture and services</p>
+                  <h3 className="font-bold text-lg mb-2">
+                    AWS Solutions Architect
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Professional certification in cloud architecture and
+                    services
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -210,37 +325,61 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             <div className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   Name
                 </label>
                 <Input id="name" placeholder="Your name" />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   Email
                 </label>
                 <Input id="email" type="email" placeholder="your@email.com" />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   Message
                 </label>
-                <Textarea id="message" placeholder="Your message" className="min-h-[120px]" />
+                <Textarea
+                  id="message"
+                  placeholder="Your message"
+                  className="min-h-[120px]"
+                />
               </div>
-              <Button className="w-full bg-blue-900 hover:bg-blue-800">Send Message</Button>
+              <Button className="w-full bg-blue-900 hover:bg-blue-800">
+                Send Message
+              </Button>
             </div>
             <div className="space-y-6">
               <h3 className="text-xl font-bold">Connect With Me</h3>
               <div className="space-y-4">
-                <Link href="#" className="flex items-center gap-3 text-gray-700 hover:text-blue-600">
+                <Link
+                  href="#"
+                  className="flex items-center gap-3 text-gray-700 hover:text-blue-600"
+                >
                   <Github className="h-5 w-5" />
                   <span>github.com/johnsmith</span>
                 </Link>
-                <Link href="#" className="flex items-center gap-3 text-gray-700 hover:text-blue-600">
+                <Link
+                  href="#"
+                  className="flex items-center gap-3 text-gray-700 hover:text-blue-600"
+                >
                   <Mail className="h-5 w-5" />
                   <span>contact@johnsmith.com</span>
                 </Link>
-                <Link href="#" className="flex items-center gap-3 text-gray-700 hover:text-blue-600">
+                <Link
+                  href="#"
+                  className="flex items-center gap-3 text-gray-700 hover:text-blue-600"
+                >
                   <Linkedin className="h-5 w-5" />
                   <span>linkedin.com/in/johnsmith</span>
                 </Link>
@@ -289,11 +428,19 @@ export default function Home() {
         </div>
       </footer>
     </main>
-  )
+  );
 }
 
 // Component for skill cards with progress bars
-function SkillCard({ name, percentage, icon }: { name: string; percentage: number; icon: string }) {
+function SkillCard({
+  name,
+  percentage,
+  icon,
+}: {
+  name: string;
+  percentage: number;
+  icon: string;
+}) {
   return (
     <Card className="p-4">
       <CardContent className="p-0">
@@ -304,11 +451,14 @@ function SkillCard({ name, percentage, icon }: { name: string; percentage: numbe
           </div>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2.5">
-          <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: `${percentage}%` }}></div>
+          <div
+            className="bg-blue-600 h-2.5 rounded-full"
+            style={{ width: `${percentage}%` }}
+          ></div>
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
 
 // Component for project cards
@@ -318,12 +468,16 @@ function ProjectCard({
   image,
   tags,
   stats,
+  liveLink,
+  demoLink,
 }: {
-  title: string
-  description: string
-  image: string
-  tags: string[] | { left: string[]; right: string[] }
-  stats: { github: number; stars: number; forks: number }
+  title: string;
+  description: string;
+  image: string;
+  tags: string[] | { left: string[]; right: string[] };
+  stats: { github: number; stars: number; forks: number };
+  liveLink: string | null;
+  demoLink: string | null;
 }) {
   return (
     <Card className="overflow-hidden">
@@ -332,7 +486,7 @@ function ProjectCard({
         alt={title}
         width={400}
         height={200}
-        className="w-full h-48 object-cover"
+        className="w-full h-48 object-cover hover:transform"
       />
       <CardContent className="p-6">
         <h3 className="font-bold text-lg mb-2">{title}</h3>
@@ -341,7 +495,10 @@ function ProjectCard({
         <div className="flex flex-wrap gap-2 mb-4">
           {Array.isArray(tags) ? (
             tags.map((tag, index) => (
-              <span key={index} className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
+              <span
+                key={index}
+                className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded"
+              >
                 {tag}
               </span>
             ))
@@ -349,14 +506,20 @@ function ProjectCard({
             <>
               <div className="flex gap-2">
                 {tags.left.map((tag, index) => (
-                  <span key={index} className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
+                  <span
+                    key={index}
+                    className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded"
+                  >
                     {tag}
                   </span>
                 ))}
               </div>
               <div className="flex gap-2 ml-auto">
                 {tags.right.map((tag, index) => (
-                  <span key={index} className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
+                  <span
+                    key={index}
+                    className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded"
+                  >
                     {tag}
                   </span>
                 ))}
@@ -366,51 +529,31 @@ function ProjectCard({
         </div>
 
         <div className="flex text-xs text-gray-500">
-          <div className="flex items-center mr-4">
-            <Github className="h-3 w-3 mr-1" />
-            <span>{stats.github}</span>
-          </div>
-          <div className="flex items-center mr-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-3 w-3 mr-1"
-            >
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-            </svg>
-            <span>{stats.stars}</span>
-          </div>
-          <div className="flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-3 w-3 mr-1"
-            >
-              <path d="M7 7H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3" />
-              <path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
-              <line x1="12" y1="12" x2="12" y2="19" />
-              <line x1="8" y1="15" x2="16" y2="15" />
-            </svg>
-            <span>{stats.forks}</span>
-          </div>
+          {liveLink ? (
+            <Link href={liveLink}>
+              <div className="flex items-center mr-4">
+                <IoIosLink className="h-3 w-3 mr-1" />
+                <span>Live link</span>
+              </div>
+            </Link>
+          ) : (
+            <></>
+          )}
+
+          {demoLink ? (
+            <Link href={demoLink}>
+              <div className="flex items-center mr-4">
+                <RiSlideshow2Line className="h-3 w-3 mr-1" />
+                <span>Demo link</span>
+              </div>
+            </Link>
+          ) : (
+            <></>
+          )}
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
 
 // Component for experience cards
@@ -420,10 +563,10 @@ function ExperienceCard({
   period,
   achievements,
 }: {
-  company: string
-  role: string
-  period: string
-  achievements: string[]
+  company: string;
+  role: string;
+  period: string;
+  achievements: string[];
 }) {
   return (
     <div className="flex gap-6">
@@ -448,5 +591,5 @@ function ExperienceCard({
         </ul>
       </div>
     </div>
-  )
+  );
 }
