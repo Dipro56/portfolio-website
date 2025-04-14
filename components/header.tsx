@@ -14,10 +14,10 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-[#0B1221] shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-2xl font-bold">
+          <Link href="/" className="text-2xl text-white font-bold">
             JS
           </Link>
 
@@ -65,7 +65,7 @@ export default function Header() {
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <Link href={href} className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+    <Link href={href} className="text-[#E2E8F0] hover:text-blue-600 font-medium transition-colors">
       {children}
     </Link>
   )

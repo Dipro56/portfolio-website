@@ -1,40 +1,40 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Mail } from "lucide-react";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io";
-import { FaReact } from "react-icons/fa";
-import { SiRedux } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { FaNode } from "react-icons/fa";
-import { FaFigma } from "react-icons/fa";
-import { FaFlutter } from "react-icons/fa6";
-import { IoIosLink } from "react-icons/io";
-import { RiSlideshow2Line } from "react-icons/ri";
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Github, Linkedin, Mail } from 'lucide-react';
+import { IoLogoJavascript } from 'react-icons/io5';
+import { FaHtml5 } from 'react-icons/fa';
+import { IoLogoCss3 } from 'react-icons/io';
+import { FaReact } from 'react-icons/fa';
+import { SiRedux } from 'react-icons/si';
+import { SiNextdotjs } from 'react-icons/si';
+import { SiTypescript } from 'react-icons/si';
+import { FaNode } from 'react-icons/fa';
+import { FaFigma } from 'react-icons/fa';
+import { FaFlutter } from 'react-icons/fa6';
+import { IoIosLink } from 'react-icons/io';
+import { RiSlideshow2Line } from 'react-icons/ri';
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gray-100">
+      <section className="bg-[#0F172A]">
         <div className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2 space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#38BDF8]">
               Hi, I&apos;m Sadat Shahriar
             </h1>
-            <div className="typing-container">
+            <div className="typing-container text-white">
               <h1>
                 I am a <span className="typing">Software Engineer</span>
               </h1>
             </div>
 
-            <p className="text-gray-700">
+            <p className="text-white">
               Passionate about building scalable applications and solving
               complex problems with clean, efficient code.
             </p>
@@ -57,18 +57,18 @@ export default function Home() {
       </section>
 
       {/* About Me Section */}
-      <section className="py-16">
+      <section className="py-16 bg-[#0B1120]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">{`<About Me/>`}</h2>
+          <h2 className="text-3xl text-[#38BDF8] font-bold text-center mb-12">{`<About Me/>`}</h2>
           <div className="max-w-3xl mx-auto mb-16">
-            <p className="text-gray-700 mb-6">
+            <p className="text-white mb-6">
               I&apos;m a dedicated software engineer with 3 years of experience
               in developing innovative web applications. My passion lies in
               creating seamless user experiences through clean, efficient code
               and intuitive design. I thrive on tackling complex problems and
               delivering high-quality, maintainable, and scalable solutions.
             </p>
-            <p className="text-gray-700">
+            <p className="text-white">
               Currently, I&apos;m working as a Software Engineer (Frontend) at
               Gakk Media. But i focus on full-stack development, ensuring our
               products not only function flawlessly but also provide exceptional
@@ -82,8 +82,10 @@ export default function Home() {
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <div className="text-blue-600 text-xl font-bold">F</div>
                 </div>
-                <h3 className="font-bold mb-2">Frontend Development</h3>
-                <p className="text-sm text-gray-600">
+                <h3 className="font-bold mb-2 text-white">
+                  Frontend Development
+                </h3>
+                <p className="text-sm text-gray-300">
                   React, Next js, JavaScript, TypeScript
                 </p>
               </CardContent>
@@ -94,8 +96,10 @@ export default function Home() {
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <div className="text-blue-600 text-xl font-bold">B</div>
                 </div>
-                <h3 className="font-bold mb-2">Backend Development</h3>
-                <p className="text-sm text-gray-600">Node.js, Python, PHP</p>
+                <h3 className="font-bold mb-2 text-white">
+                  Backend Development
+                </h3>
+                <p className="text-sm text-gray-300">Node.js, Python, PHP</p>
               </CardContent>
             </Card>
 
@@ -104,8 +108,8 @@ export default function Home() {
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <div className="text-blue-600 text-xl font-bold">U</div>
                 </div>
-                <h3 className="font-bold mb-2">UI/UX Design</h3>
-                <p className="text-sm text-gray-600">Figma, Adobe XD</p>
+                <h3 className="font-bold mb-2 text-white">UI/UX Design</h3>
+                <p className="text-sm text-gray-300">Figma, Adobe XD</p>
               </CardContent>
             </Card>
 
@@ -114,8 +118,10 @@ export default function Home() {
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <div className="text-blue-600 text-xl font-bold">M</div>
                 </div>
-                <h3 className="font-bold mb-2">Mobile Development</h3>
-                <p className="text-sm text-gray-600">React Native, Flutter</p>
+                <h3 className="font-bold mb-2 text-white">
+                  Mobile Development
+                </h3>
+                <p className="text-sm text-gray-300">React Native, Flutter</p>
               </CardContent>
             </Card>
           </div>
@@ -123,58 +129,58 @@ export default function Home() {
       </section>
 
       {/* Technical Skills Section */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-[#0F172A]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">{`<Technical Skills/>`}</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#38BDF8]">{`<Technical Skills/>`}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
             <div className="flex flex-col justify-center items-center">
-              <IoLogoJavascript size={70} />
-              <p className="mt-3">Javascript</p>
+              <IoLogoJavascript fill="white" size={70} />
+              <p className="mt-3 text-white">Javascript</p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <FaHtml5 size={70} />
-              <p className="mt-3">Html</p>
+              <FaHtml5 fill="white" size={70} />
+              <p className="mt-3 text-white">Html</p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <IoLogoCss3 size={70} />
-              <p className="mt-3">CSS</p>
+              <IoLogoCss3 fill="white" size={70} />
+              <p className="mt-3 text-white">CSS</p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <FaReact size={70} />
-              <p className="mt-3">React</p>
+              <FaReact fill="white" size={70} />
+              <p className="mt-3 text-white">React</p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <SiRedux size={70} />
-              <p className="mt-3">Redux</p>
+              <SiRedux fill="white" size={70} />
+              <p className="mt-3 text-white">Redux</p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <SiNextdotjs size={70} />
-              <p className="mt-3">Next Js</p>
+              <SiNextdotjs fill="white" size={70} />
+              <p className="mt-3 text-white">Next Js</p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <SiTypescript size={70} />
-              <p className="mt-3">Typescript</p>
+              <SiTypescript fill="white" size={70} />
+              <p className="mt-3 text-white">Typescript</p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <FaNode size={70} />
-              <p className="mt-3">Node</p>
+              <FaNode fill="white" size={70} />
+              <p className="mt-3 text-white">Node</p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <FaFigma size={70} />
-              <p className="mt-3">Figma</p>
+              <FaFigma fill="white" size={70} />
+              <p className="mt-3 text-white">Figma</p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <FaFlutter size={70} />
-              <p className="mt-3">Flutter</p>
+              <FaFlutter fill="white" size={70} />
+              <p className="mt-3 text-white">Flutter</p>
             </div>
 
             {/* <SkillCard name="JavaScript" percentage={90} icon="JS" />
@@ -186,16 +192,16 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="py-16">
+      <section className="py-16 bg-[#0B1221]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">{`<Featured Projects/>`}</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#38BDF8]">{`<Featured Projects/>`}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ProjectCard
               title="Shadhin"
               description="Largest audio platform of Bangladesh. User can enjoy different kind of audio contents here."
               image="/images/shadhin_project.png"
-              tags={["Javascript", "React", "Next.js", "Zustand"]}
-              liveLink={"https://shadhinmusic.com/"}
+              tags={['Javascript', 'React', 'Next.js', 'Zustand']}
+              liveLink={'https://shadhinmusic.com/'}
               stats={{ github: 25, stars: 42, forks: 15 }}
               demoLink={null}
             />
@@ -203,11 +209,11 @@ export default function Home() {
               title="Infiniti"
               description="Infiniti is a document processing software. It is used for document editing and storing. "
               image="/images/infinite.png"
-              tags={["React", "Typescript", "Redux"]}
+              tags={['React', 'Typescript', 'Redux']}
               stats={{ github: 18, stars: 36, forks: 12 }}
-              liveLink={"http://100.42.178.85:3002/"}
+              liveLink={'http://100.42.178.85:3002/'}
               demoLink={
-                "https://drive.google.com/file/d/1Jh_1f9C2u0n42FUQ5pOXa671_NmfhVMn/view?usp=drive_link"
+                'https://drive.google.com/file/d/1Jh_1f9C2u0n42FUQ5pOXa671_NmfhVMn/view?usp=drive_link'
               }
             />
 
@@ -215,9 +221,9 @@ export default function Home() {
               title="Win"
               description="Win is a quiz platform. User can enjoy different types of quiz here. This platform is also used by different types of telco."
               image="/images/win.png"
-              tags={["Javascript", "React", "Next Js", "Redux"]}
+              tags={['Javascript', 'React', 'Next Js', 'Redux']}
               stats={{ github: 18, stars: 36, forks: 12 }}
-              liveLink={"https://win2gain.com"}
+              liveLink={'https://win2gain.com'}
               demoLink={null}
             />
 
@@ -225,9 +231,9 @@ export default function Home() {
               title="Shadhin CMS"
               description="This project is for data monitoring and observing different types of revenue for shadhin company."
               image="/images/shadhincms.png"
-              tags={["Javascript", "React", "Redux"]}
+              tags={['Javascript', 'React', 'Redux']}
               stats={{ github: 18, stars: 36, forks: 12 }}
-              liveLink={"http://shadhincms.shadhin.co/"}
+              liveLink={'http://shadhincms.shadhin.co/'}
               demoLink={null}
             />
           </div>
@@ -235,20 +241,20 @@ export default function Home() {
       </section>
 
       {/* Work Experience Section */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-[#0F172A]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">{`<Work Experience/>`}</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#38BDF8]">{`<Work Experience/>`}</h2>
           <div className="max-w-3xl mx-auto space-y-12">
             <ExperienceCard
               company="Gakk Media (Shadhin)"
               role="Software Engineer (Frontend)"
               period="2022 October - Present"
               achievements={[
-                "Implemented various features like stream & win campaign, playlist, payment, authentication of Shadhin which is currently number one audio platform of Bangladesh.",
-                "Restructured the project and refactored old unmaintainable codes to readable, maintainable and clean code. Increased performance by decreasing initial loading time.",
-                "Build a report management system from scratch for viewing various kind of data report using React which is used by telecommunication clients (Banglalink, GP, Robi).",
-                "Developed VAS services and updated features as per client need.",
-                "Helped and guided junior teammates.",
+                'Implemented various features like stream & win campaign, playlist, payment, authentication of Shadhin which is currently number one audio platform of Bangladesh.',
+                'Restructured the project and refactored old unmaintainable codes to readable, maintainable and clean code. Increased performance by decreasing initial loading time.',
+                'Build a report management system from scratch for viewing various kind of data report using React which is used by telecommunication clients (Banglalink, GP, Robi).',
+                'Developed VAS services and updated features as per client need.',
+                'Helped and guided junior teammates.',
               ]}
             />
             <ExperienceCard
@@ -256,9 +262,9 @@ export default function Home() {
               role="Software Engineer (Frontend)"
               period="2024 Deember - 2025 March (Contractual)"
               achievements={[
-                "Developed document drawing functionality within the DocuWare platform to build interactive and user-friendly drawing tools.",
-                "Designed and implemented complex document annotation features, including drawing, highlighting, and editing, significantly enhancing user interactivity with documents",
-                "Collaborated with cross-functional teams to ensure smooth integration, high performance, and a user-friendly interface for the document drawing features",
+                'Developed document drawing functionality within the DocuWare platform to build interactive and user-friendly drawing tools.',
+                'Designed and implemented complex document annotation features, including drawing, highlighting, and editing, significantly enhancing user interactivity with documents',
+                'Collaborated with cross-functional teams to ensure smooth integration, high performance, and a user-friendly interface for the document drawing features',
               ]}
             />
 
@@ -267,9 +273,9 @@ export default function Home() {
               role="Software Developer"
               period="2022 January - 2022 December"
               achievements={[
-                "Developed and maintained web and mobile applications using JavaScript, React, React Native and Node.js",
+                'Developed and maintained web and mobile applications using JavaScript, React, React Native and Node.js',
                 `Collaborated with cross-functional teams to design and implement new features Resolved performance issues for different client products.`,
-                "Converted figma design to functional components as perproject requirement.",
+                'Converted figma design to functional components as perproject requirement.',
               ]}
             />
           </div>
@@ -277,43 +283,62 @@ export default function Home() {
       </section>
 
       {/* Education & Certifications Section */}
-      <section className="py-16">
+      <section className="py-16 bg-[#0B1221]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Education & Certifications
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#38BDF8]">
+            {`<Education & Certifications/>`}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      
+
             <Card className="p-6">
               <CardContent className="pt-6 flex items-start gap-4">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
                   <div className="text-blue-600 text-xl">🎓</div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">
-                    Master of Computer Science
+                  <h3 className="font-bold text-white text-lg mb-2">
+                    BSc in Software Engineering
                   </h3>
-                  <p className="text-sm text-gray-600">
-                    Specialized in Artificial Intelligence and Machine Learning
+                  <p className="text-sm text-gray-300">
+                    Islamic University Of Technology (IUT)
                   </p>
                 </div>
               </CardContent>
             </Card>
+
             <Card className="p-6">
               <CardContent className="pt-6 flex items-start gap-4">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                  <div className="text-blue-600 text-xl">🏆</div>
+                  <div className="text-blue-600 text-xl">🎓</div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-2">
-                    AWS Solutions Architect
+                  <h3 className="font-bold text-white text-lg mb-2">
+                    HSC (2014-16)
                   </h3>
-                  <p className="text-sm text-gray-600">
-                    Professional certification in cloud architecture and
-                    services
+                  <p className="text-sm text-gray-300">
+                    Govt. Azizul Haque College Bogura
                   </p>
                 </div>
               </CardContent>
             </Card>
+
+              <Card className="p-6">
+              <CardContent className="pt-6 flex items-start gap-4">
+                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                  <div className="text-blue-600 text-xl">🎓</div>
+                </div>
+                <div>
+                  <h3 className="font-bold text-white text-lg mb-2">
+                    SSC (2014)
+                  </h3>
+                  <p className="text-sm text-gray-300">
+                    Bogura Cantonment Public School And College
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
           </div>
         </div>
       </section>
@@ -409,10 +434,10 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-blue-900 text-white py-6">
+      <footer className="bg-[#0B1221] text-white py-6">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm">© 2023 John Smith. All rights reserved.</p>
+            <p className="text-sm">© 2025 Sadat Shahriar All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <Link href="#" className="text-sm hover:underline">
                 About
@@ -480,17 +505,17 @@ function ProjectCard({
   demoLink: string | null;
 }) {
   return (
-    <Card className="overflow-hidden">
+    <Card className="overflow-hidden bg-[#182234] border-gray-500">
       <Image
-        src={image || "/placeholder.svg"}
+        src={image || '/placeholder.svg'}
         alt={title}
         width={400}
         height={200}
         className="w-full h-48 object-cover hover:transform"
       />
       <CardContent className="p-6">
-        <h3 className="font-bold text-lg mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
+        <h3 className="font-bold text-lg mb-2 text-[#38BDF8]">{title}</h3>
+        <p className="text-white text-sm mb-4">{description}</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {Array.isArray(tags) ? (
@@ -531,7 +556,7 @@ function ProjectCard({
         <div className="flex text-xs text-gray-500">
           {liveLink ? (
             <Link href={liveLink}>
-              <div className="flex items-center mr-4">
+              <div className="flex items-center mr-4 text-[#38BDF8]">
                 <IoIosLink className="h-3 w-3 mr-1" />
                 <span>Live link</span>
               </div>
@@ -542,7 +567,7 @@ function ProjectCard({
 
           {demoLink ? (
             <Link href={demoLink}>
-              <div className="flex items-center mr-4">
+              <div className="flex items-center mr-4 text-[#38BDF8]">
                 <RiSlideshow2Line className="h-3 w-3 mr-1" />
                 <span>Demo link</span>
               </div>
@@ -577,7 +602,7 @@ function ExperienceCard({
         <div className="w-0.5 grow bg-gray-300 my-2"></div>
       </div>
       <div className="space-y-2">
-        <h3 className="text-xl font-bold">{role}</h3>
+        <h3 className="text-xl text-white font-bold">{role}</h3>
         <p className="text-blue-600">
           {company} • {period}
         </p>
@@ -585,7 +610,7 @@ function ExperienceCard({
           {achievements.map((achievement, index) => (
             <li key={index} className="flex items-start gap-2">
               <span className="text-gray-400">•</span>
-              <span className="text-gray-700">{achievement}</span>
+              <span className="text-white">{achievement}</span>
             </li>
           ))}
         </ul>
