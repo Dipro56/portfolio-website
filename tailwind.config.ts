@@ -1,13 +1,12 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-    "*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}", // if using pages directory
+    "./components/**/*.{js,ts,jsx,tsx,mdx}", // all components directory
+    "./app/**/*.{js,ts,jsx,tsx,mdx}", // if using app directory
+    "./styles/**/*.{css,scss}",
   ],
   prefix: "",
   theme: {
@@ -82,6 +81,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
