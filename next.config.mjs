@@ -28,6 +28,7 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   basePath: "/portfolio-website",
+  assetPrefix: "/portfolio-website/",
   output: "export",
   reactStrictMode: true,
 };
