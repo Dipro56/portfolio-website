@@ -31,6 +31,8 @@ const nextConfig = {
   assetPrefix: "/portfolio-website/",
   output: "export",
   reactStrictMode: true,
+  trailingSlash: true, // Optional: Helps with GitHub Pages hosting
+  reactStrictMode: true,
 };
 
 if (userConfig) {
