@@ -20,15 +20,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      
+
       - name: Install dependencies
         run: |
-          npm ci
+          npm i --legacy-peer-deps
 
       - name: Build with Next.js
         run: |
@@ -38,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out  # Make sure this is the export folder path
+          path: ./out # Make sure this is the export folder path
 
   deploy:
     environment:
@@ -52,9 +52,8 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           # Deploy to the GitHub Pages branch
-          branch: gh-pages  # Make sure the deployment target is correct
-          folder: ./out     # Ensure this points to the right export directory
-
+          branch: gh-pages # Make sure the deployment target is correct
+          folder: ./out # Ensure this points to the right export directory
 
 # old
 # # Sample workflow for building and deploying a Next.js site to GitHub Pages
